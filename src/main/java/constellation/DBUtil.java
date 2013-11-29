@@ -9,7 +9,7 @@ import constellation.vo.Table;
 import java.sql.*;
 
 
-/** Что ж, прекрасно-прекрасно, только вот у Вас здесь ошибочка получилась, компилятор её не видет, но я заметил... ВСЕ ПЕРЕДЕЛАТЬ!!!
+/**
  * Created with IntelliJ IDEA.
  * User: vladimir
  * Date: 11/27/13
