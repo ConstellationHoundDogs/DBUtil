@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Nov 29 23:55:45 EET 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0142-a5dc-443f-000002778eb0 
+on database directory /home/vladimir/IdeaProjects/DBUtil/TESTDB with class loader sun.misc.Launcher$AppClassLoader@1137792 
+Loaded from file:/home/vladimir/.m2/repository/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_45-b18
+user.dir=/home/vladimir/IdeaProjects/DBUtil
+os.name=Linux
+os.arch=i386
+os.version=3.5.0-43-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
