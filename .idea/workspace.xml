@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57e78a0-c114-41f2-aa03-0948f199ef78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/db.lck" afterPath="$PROJECT_DIR$/TESTDB/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/log.ctrl" afterPath="$PROJECT_DIR$/TESTDB/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/log1.dat" afterPath="$PROJECT_DIR$/TESTDB/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/TESTDB/log/logmirror.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DBUtil.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385764857925" ignored="false" />
+    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385764892339" ignored="false" />
     <file path="/fragment.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385760068961" ignored="false" />
     <file path="/DBUtil.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385764830548" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -416,7 +411,11 @@
       <created>1385764862682</created>
       <updated>1385764862682</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Last commit">
+      <created>1385764903314</created>
+      <updated>1385764903314</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
