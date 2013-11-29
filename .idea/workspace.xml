@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c57e78a0-c114-41f2-aa03-0948f199ef78" name="Default" comment="Last commit">
+    <list default="true" id="c57e78a0-c114-41f2-aa03-0948f199ef78" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DBUtil.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385765274232" ignored="false" />
+    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385765325160" ignored="false" />
     <file path="/fragment.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385760068961" ignored="false" />
     <file path="/DBUtil.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385764830548" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -410,7 +410,11 @@
       <created>1385765187561</created>
       <updated>1385765187561</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Last commit">
+      <created>1385765327449</created>
+      <updated>1385765327449</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
