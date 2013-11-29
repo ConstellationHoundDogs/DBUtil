@@ -65,7 +65,7 @@ public class DBUtil {
         }
     }
 
-    private void initLogger(){
+    public static void initLogger(){
          logger = Logger.getLogger(DBUtil.class.getName());
     }
 
