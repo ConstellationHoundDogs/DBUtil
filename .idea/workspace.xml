@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c57e78a0-c114-41f2-aa03-0948f199ef78" name="Default" comment="">
+    <list default="true" id="c57e78a0-c114-41f2-aa03-0948f199ef78" name="Default" comment="Last commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <list id="cd9dee10-3d1d-4ae3-b58a-94dfde08e844" name="New changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SQLExceptionTest.java" />
     </list>
     <ignored path="DBUtil.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385765167063" ignored="false" />
+    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385765274232" ignored="false" />
     <file path="/fragment.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385760068961" ignored="false" />
     <file path="/DBUtil.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385764830548" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,7 +72,7 @@
       <file leaf-file-name="SQLExceptionTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SQLExceptionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="367" selection-end="367" vertical-scroll-proportion="0.13914657">
+            <state line="58" column="22" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.3320965">
               <folding />
             </state>
           </provider>
@@ -409,12 +406,16 @@
       <created>1385764909685</created>
       <updated>1385764909685</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Last commit">
+      <created>1385765187561</created>
+      <updated>1385765187561</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="47" width="1366" height="697" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -429,7 +430,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67128026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67128026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -576,7 +577,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SQLExceptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="367" selection-end="367" vertical-scroll-proportion="0.13914657">
+        <state line="58" column="22" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.3320965">
           <folding />
         </state>
       </provider>
