@@ -13,6 +13,11 @@ import java.io.*;
  * Time: 10:07 AM
  */
 public class PlainTextFileCreator implements FileCreator {
+
+    /**
+     * Creates "PlainTextFile" containing database information displayed in text format
+     * @param dbInfo
+     */
     @Override
     public void createFile(DBInfo dbInfo) {
         File file = new File("PlainTextFile");
@@ -29,7 +34,6 @@ public class PlainTextFileCreator implements FileCreator {
             DBUtil.logger.error(e.getMessage());
         }
     }
-
 
     private void textDBInfoOutput(DBInfo dbInfo) {
         System.out.println(dbInfo.dataBaseName);

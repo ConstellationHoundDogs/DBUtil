@@ -15,6 +15,11 @@ import java.io.File;
  */
 
 public class XMLFileCreator implements FileCreator {
+
+    /**
+     * Creates "XMLFile" containing database information displayed in XML format
+     * @param dbInfo
+     */
     @Override
     public void createFile(DBInfo dbInfo) {
         File xmlFile = new File("XMLFile");

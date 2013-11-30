@@ -12,6 +12,7 @@ import java.sql.*;
  * Date: 11/30/13
  * Time: 10:06 AM
  */
+
 public class DBOperator {
 
     private String dbURL;
@@ -20,6 +21,12 @@ public class DBOperator {
     public DBOperator(String dbURL){
         this.dbURL = dbURL;
     }
+
+
+    /**
+     *
+     * Initializes the Database. Always call it after creating this object.
+     */
 
     public void initDB(){
         try {
@@ -30,14 +37,16 @@ public class DBOperator {
     }
 
 
+    /**
+     * Gets the DBInfo object containing Database information.
+     * @return DBInfo  Database information
+     * @throws SQLException
+     */
+
     public DBInfo getDbInfo() throws SQLException {
         DBInfo dbInfo = new DBInfo();
-
         updateDataBaseMetaData(dbInfo);
-
         updateTablesContents(dbInfo);
-
-
         return dbInfo;
     }
 
