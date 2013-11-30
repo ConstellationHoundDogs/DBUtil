@@ -1,5 +1,6 @@
 package constellation;
 
+import constellation.filecreator.PlainTextFileCreator;
 import org.apache.log4j.Logger;
 import constellation.filecreator.XMLFileCreator;
 import constellation.vo.Column;
@@ -21,41 +22,31 @@ public class DBUtil {
     Connection conn;
     String dbURL = "jdbc:derby:TESTDB";
 
+    public static void initLogger(){
+        logger = Logger.getLogger(DBUtil.class.getName());
+    }
 
-    public static void main(String... args) throws SQLException {
+    public static void main(String[] args) throws SQLException {
         DBUtil dbUtil = new DBUtil();
+        if(args.length != 0){
+           dbUtil.dbURL = args[0];
+        }
         dbUtil.run();
     }
+
 
     public void run() throws SQLException {
         initLogger();
         initDB();
         DBInfo dbInfo = getDbInfo();
-        textDBInfoOutput(dbInfo);
+
         XMLFileCreator xmlFileCreator = new XMLFileCreator();
         xmlFileCreator.createFile(dbInfo);
+        PlainTextFileCreator plainTextFileCreator = new PlainTextFileCreator();
+        plainTextFileCreator.createFile(dbInfo);
     }
 
 
-    private void textDBInfoOutput(DBInfo dbInfo) {
-        System.out.println(dbInfo.dataBaseName);
-        System.out.println(dbInfo.dataBaseVersion);
-
-        for(Table t : dbInfo.tables){
-            System.out.println(t.tableName);
-            System.out.println(t.columnsNumber);
-            for(int i = 0; i < t.columns.size(); i++){
-                System.out.print(t.columns.get(i).columnType + " ");
-            }
-            System.out.println();
-            for(int i = 0; i < t.columns.get(0).content.size(); i++){
-                for(int j = 0; j < t.columnsNumber; j++){
-                    System.out.print(t.columns.get(j).content.get(i) + " ");
-                }
-                System.out.println();
-            }
-        }
-    }
 
     private void initDB(){
         try {
@@ -63,10 +54,6 @@ public class DBUtil {
         } catch (SQLException e) {
             logger.error("Couldn't get DB connection: "+ e.getMessage());
         }
-    }
-
-    public static void initLogger(){
-         logger = Logger.getLogger(DBUtil.class.getName());
     }
 
     private DBInfo getDbInfo() throws SQLException {
@@ -91,8 +78,8 @@ public class DBUtil {
                 t.columnsNumber = resultSetMetaData.getColumnCount();
                 for(int i = 1; i <= t.columnsNumber; i++){
                     Column column = new Column();
-                    column.columnName = resultSetMetaData.getColumnName(i);
-                    column.columnType = resultSetMetaData.getColumnTypeName(i);
+                    column.setColumnName(resultSetMetaData.getColumnName(i));
+                    column.setColumnType(resultSetMetaData.getColumnTypeName(i));
                     t.columns.add(column);
                 }
                 getColumnsContent(resultSet, t);
@@ -130,7 +117,5 @@ public class DBUtil {
         } catch (SQLException e) {
             logger.error("Couldn't get DataBaseMetaData: " + e.getMessage());
         }
-
     }
-
 }
