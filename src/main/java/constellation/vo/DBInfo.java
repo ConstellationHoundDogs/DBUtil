@@ -13,23 +13,17 @@ import javax.xml.bind.annotation.*;
  */
 
 @XmlRootElement
-@XmlAccessorType(XmlAccessType.PROPERTY)
 public class DBInfo {
 
-    @XmlElement
+
     private String dataBaseName;
-    @XmlElement
     private String dataBaseVersion;
 
-    @XmlElementWrapper(name = "schemas")
-    @XmlElement(name = "schema")
-    public List<String> schemaNames = new ArrayList<String>();
 
-    @XmlElementWrapper(name = "tables")
-    @XmlElement(name = "table")
-    public List<Table> tables = new ArrayList<Table>();
+    private List<String> schemaNames = new ArrayList<String>();
+    private List<Table> tables = new ArrayList<Table>();
 
-
+    @XmlElement
     public String getDataBaseName() {
         return dataBaseName;
     }
@@ -38,7 +32,7 @@ public class DBInfo {
         this.dataBaseName = dataBaseName;
     }
 
-
+    @XmlElement
     public String getDataBaseVersion() {
         return dataBaseVersion;
     }
@@ -48,19 +42,16 @@ public class DBInfo {
         this.dataBaseVersion = dataBaseVersion;
     }
 
+    @XmlElementWrapper(name = "schemas")
+    @XmlElement (name = "schema")
     public List<String> getSchemaNames() {
         return schemaNames;
     }
 
-    public void setSchemaNames(List<String> schemaNames) {
-        this.schemaNames = schemaNames;
-    }
-
+    @XmlElementWrapper(name = "tables")
+    @XmlElement (name = "table")
     public List<Table> getTables() {
         return tables;
     }
 
-    public void setTables(List<Table> tables) {
-        this.tables = tables;
-    }
 }

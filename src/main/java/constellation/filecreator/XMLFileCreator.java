@@ -18,7 +18,7 @@ public class XMLFileCreator implements FileCreator {
 
     /**
      * Creates "XMLFile" containing database information displayed in XML format
-     * @param dbInfo
+     * @param dbInfo VO containing Database information
      */
     @Override
     public void createFile(DBInfo dbInfo) {
@@ -29,6 +29,7 @@ public class XMLFileCreator implements FileCreator {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             marshaller.marshal(dbInfo, xmlFile);
         } catch (JAXBException e) {
+            System.out.println(e.getMessage());
             DBUtil.logger.error("Error in XMLFileCreator:" + e.getMessage());
         }
     }

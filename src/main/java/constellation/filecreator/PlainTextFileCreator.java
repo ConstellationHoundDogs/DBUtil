@@ -16,7 +16,7 @@ public class PlainTextFileCreator implements FileCreator {
 
     /**
      * Creates "PlainTextFile" containing database information displayed in text format
-     * @param dbInfo
+     * @param dbInfo VO containing Database information
      */
     @Override
     public void createFile(DBInfo dbInfo) {
@@ -39,7 +39,7 @@ public class PlainTextFileCreator implements FileCreator {
         System.out.println(dbInfo.getDataBaseName());
         System.out.println(dbInfo.getDataBaseVersion());
 
-        for(Table t : dbInfo.tables){
+        for(Table t : dbInfo.getTables()){
             System.out.println(t.tableName);
             System.out.println(t.columnsNumber);
             for(int i = 0; i < t.columns.size(); i++){

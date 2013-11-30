@@ -65,7 +65,7 @@ public class DBOperator {
     private void updateTablesContents(DBInfo dbInfo) {
         Statement statement;
         ResultSet resultSet;
-        for(Table t : dbInfo.tables){
+        for(Table t : dbInfo.getTables()){
             try {
                 statement = conn.createStatement();
                 resultSet = statement.executeQuery("SELECT * FROM " + t.tableName);
@@ -101,13 +101,13 @@ public class DBOperator {
             dbInfo.setDataBaseVersion(databaseMetaData.getDriverVersion());
             ResultSet schemas = databaseMetaData.getSchemas();
             while (schemas.next()){
-                dbInfo.schemaNames.add(schemas.getString(1));
+                dbInfo.getSchemaNames().add(schemas.getString(1));
             }
             ResultSet tables = databaseMetaData.getTables(null, "APP", null, null);
             while (tables.next()){
                 Table table = new Table();
                 table.tableName = tables.getString("TABLE_NAME");
-                dbInfo.tables.add(table);
+                dbInfo.getTables().add(table);
             }
         } catch (SQLException e) {
             DBUtil.logger.error("Couldn't get DataBaseMetaData: " + e.getMessage());
