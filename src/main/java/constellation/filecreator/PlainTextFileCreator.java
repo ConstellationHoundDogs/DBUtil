@@ -36,14 +36,14 @@ public class PlainTextFileCreator implements FileCreator {
     }
 
     private void textDBInfoOutput(DBInfo dbInfo) {
-        System.out.println(dbInfo.dataBaseName);
-        System.out.println(dbInfo.dataBaseVersion);
+        System.out.println(dbInfo.getDataBaseName());
+        System.out.println(dbInfo.getDataBaseVersion());
 
         for(Table t : dbInfo.tables){
             System.out.println(t.tableName);
             System.out.println(t.columnsNumber);
             for(int i = 0; i < t.columns.size(); i++){
-                System.out.print(t.columns.get(i).getColumnType() + " ");
+                System.out.print(t.columns.get(i).columnType + " ");
             }
             System.out.println();
             for(int i = 0; i < t.columns.get(0).content.size(); i++){

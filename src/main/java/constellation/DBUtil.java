@@ -3,12 +3,9 @@ package constellation;
 import constellation.filecreator.PlainTextFileCreator;
 import org.apache.log4j.Logger;
 import constellation.filecreator.XMLFileCreator;
-import constellation.vo.Column;
 import constellation.vo.DBInfo;
-import constellation.vo.Table;
 
 import java.sql.*;
-
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,7 +16,6 @@ import java.sql.*;
 public class DBUtil {
     public static Logger logger;
 
-    Connection conn;
     String dbURL = "jdbc:derby:TESTDB";
 
     public static void initLogger(){
@@ -34,19 +30,21 @@ public class DBUtil {
         dbUtil.run();
     }
 
-
     public void run() throws SQLException {
         initLogger();
 
         DBOperator dbOperator = new DBOperator(dbURL);
-
         dbOperator.initDB();
+
         DBInfo dbInfo = dbOperator.getDbInfo();
 
         XMLFileCreator xmlFileCreator = new XMLFileCreator();
         xmlFileCreator.createFile(dbInfo);
+
         PlainTextFileCreator plainTextFileCreator = new PlainTextFileCreator();
         plainTextFileCreator.createFile(dbInfo);
+
+        dbOperator.deInitDB();
     }
 
 }

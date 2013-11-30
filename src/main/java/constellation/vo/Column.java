@@ -10,33 +10,10 @@ import java.util.List;
  * Time: 10:56 PM
  */
 public class Column {
-    private String columnName;
-    private String columnType;
 
+    public String columnName;
+    public String columnType;
 
     public List<String> content = new ArrayList<String>();
 
-    public String getColumnName() {
-        return columnName;
-    }
-
-    public void setColumnName(String columnName) {
-        this.columnName = columnName;
-    }
-
-    public String getColumnType() {
-        return columnType;
-    }
-
-    public void setColumnType(String columnType) {
-        this.columnType = columnType;
-    }
-
-    public List<String> getContent() {
-        return content;
-    }
-
-    public void setContent(List<String> content) {
-        this.content = content;
-    }
 }

@@ -24,7 +24,6 @@ public class DBOperator {
 
 
     /**
-     *
      * Initializes the Database. Always call it after creating this object.
      */
 
@@ -33,6 +32,19 @@ public class DBOperator {
             conn = DriverManager.getConnection(dbURL);
         } catch (SQLException e) {
             DBUtil.logger.error("Couldn't get DB connection: " + e.getMessage());
+        }
+    }
+
+
+    /**
+     * DeInitializes the Database. Always call it after done using this object.
+     */
+
+    public void deInitDB(){
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            DBUtil.logger.error(e.getMessage());
         }
     }
 
@@ -61,8 +73,8 @@ public class DBOperator {
                 t.columnsNumber = resultSetMetaData.getColumnCount();
                 for(int i = 1; i <= t.columnsNumber; i++){
                     Column column = new Column();
-                    column.setColumnName(resultSetMetaData.getColumnName(i));
-                    column.setColumnType(resultSetMetaData.getColumnTypeName(i));
+                    column.columnName = resultSetMetaData.getColumnName(i);
+                    column.columnType = resultSetMetaData.getColumnTypeName(i);
                     t.columns.add(column);
                 }
                 updateColumnsContent(resultSet, t);
@@ -85,8 +97,8 @@ public class DBOperator {
         DatabaseMetaData databaseMetaData;
         try {
             databaseMetaData = conn.getMetaData();
-            dbInfo.dataBaseName = databaseMetaData.getDatabaseProductName();
-            dbInfo.dataBaseVersion = databaseMetaData.getDriverVersion();
+            dbInfo.setDataBaseName(databaseMetaData.getDatabaseProductName());
+            dbInfo.setDataBaseVersion(databaseMetaData.getDriverVersion());
             ResultSet schemas = databaseMetaData.getSchemas();
             while (schemas.next()){
                 dbInfo.schemaNames.add(schemas.getString(1));
