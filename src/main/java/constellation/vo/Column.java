@@ -1,5 +1,6 @@
 package constellation.vo;
 
+import javax.xml.bind.annotation.XmlElement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,9 +12,35 @@ import java.util.List;
  */
 public class Column {
 
-    public String columnName;
-    public String columnType;
+    private String columnName;
+    private List<String> content = new ArrayList<String>();
+    private String columnType;
 
-    public List<String> content = new ArrayList<String>();
+    @XmlElement
+    public String getColumnName() {
+        return columnName;
+    }
+
+    public void setColumnName(String columnName) {
+        this.columnName = columnName;
+    }
+
+    @XmlElement
+    public String getColumnType() {
+        return columnType;
+    }
+
+    public void setColumnType(String columnType) {
+        this.columnType = columnType;
+    }
+
+    @XmlElement
+    public List<String> getContent() {
+        return content;
+    }
+
+    public void setContent(List<String> content) {
+        this.content = content;
+    }
 
 }

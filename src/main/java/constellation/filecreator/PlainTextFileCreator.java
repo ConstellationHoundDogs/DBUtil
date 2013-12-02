@@ -27,32 +27,30 @@ public class PlainTextFileCreator implements FileCreator {
             DBUtil.logger.error(e.getMessage());
         }
         try {
-            System.setOut(new PrintStream(file));
-            textDBInfoOutput(dbInfo);
-            System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
+            PrintStream printStream = new PrintStream(new FileOutputStream(file));
+            textDBInfoOutput(dbInfo, printStream);
         } catch (FileNotFoundException e) {
             DBUtil.logger.error(e.getMessage());
         }
     }
 
-    private void textDBInfoOutput(DBInfo dbInfo) {
-        System.out.println(dbInfo.getDataBaseName());
-        System.out.println(dbInfo.getDataBaseVersion());
+    private void textDBInfoOutput(DBInfo dbInfo, PrintStream printStream) {
+        printStream.println(dbInfo.getDataBaseName());
+        printStream.println(dbInfo.getDataBaseVersion());
 
         for(Table t : dbInfo.getTables()){
-            System.out.println(t.getTableName());
-            System.out.println(t.getColumnsNumber());
+            printStream.println(t.getTableName());
+            printStream.println(t.getColumnsNumber());
             for(int i = 0; i < t.getColumns().size(); i++){
-                System.out.print(t.getColumns().get(i).columnType + " ");
+                printStream.print(t.getColumns().get(i).getColumnType() + " ");
             }
-            System.out.println();
-            for(int i = 0; i < t.getColumns().get(0).content.size(); i++){
+            printStream.println();
+            for(int i = 0; i < t.getColumns().get(0).getContent().size(); i++){
                 for(int j = 0; j < t.getColumnsNumber(); j++){
-                    System.out.print(t.getColumns().get(j).content.get(i) + " ");
+                    printStream.print(t.getColumns().get(j).getContent().get(i) + " ");
                 }
-                System.out.println();
+                printStream.println();
             }
         }
     }
-
 }

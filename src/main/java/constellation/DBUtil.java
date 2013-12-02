@@ -1,5 +1,7 @@
 package constellation;
 
+import constellation.dbfetcher.DBFetcher;
+import constellation.dbfetcher.JDBCDBFetcher;
 import constellation.filecreator.PlainTextFileCreator;
 import org.apache.log4j.Logger;
 import constellation.filecreator.XMLFileCreator;
@@ -14,8 +16,8 @@ import java.sql.*;
  * Time: 10:31 PM
  */
 public class DBUtil {
-    public static Logger logger;
 
+    public static Logger logger;
     String dbURL = "jdbc:derby:TESTDB";
 
     public static void initLogger(){
@@ -32,15 +34,17 @@ public class DBUtil {
 
     public void run() throws SQLException {
         initLogger();
-        DBOperator dbOperator = new DBOperator(dbURL);
-        dbOperator.initDB();
+        DBFetcher dbFetcher = new JDBCDBFetcher(dbURL);
+        dbFetcher.initDB();
 
-        DBInfo dbInfo = dbOperator.getDBInfoBySysTables();
+        DBInfo dbInfo = dbFetcher.getDBInfo();
 
         XMLFileCreator xmlFileCreator = new XMLFileCreator();
         xmlFileCreator.createFile(dbInfo);
 
-        dbOperator.deInitDB();
-    }
+        PlainTextFileCreator plainTextFileCreator = new PlainTextFileCreator();
+        plainTextFileCreator.createFile(dbInfo);
 
+        dbFetcher.deInitDB();
+    }
 }

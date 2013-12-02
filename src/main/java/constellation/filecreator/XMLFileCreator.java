@@ -13,7 +13,6 @@ import java.io.File;
  * Date: 11/29/13
  * Time: 5:09 PM
  */
-
 public class XMLFileCreator implements FileCreator {
 
     /**
