@@ -13,13 +13,32 @@ import java.sql.SQLException;
 public class DBFetcherTest {
 
     @Test (expected = SQLException.class)
-    public void testInitDB() throws Exception {
+    public void testInitDBJDBCNotRightURL() throws Exception {
         String testDBURL = "This DB url is not right.";
         DBFetcher dbFetcher = new JDBCDBFetcher(testDBURL);
+        dbFetcher.initDB();
     }
 
-    @Test
-    public void testDeInitDB() throws Exception {
-
+    @Test (expected = SQLException.class)
+    public void testDeInitDBJDBCNotRightURL() throws Exception {
+        String testDBURL = "This DB url is not right.";
+        DBFetcher dbFetcher = new JDBCDBFetcher(testDBURL);
+        dbFetcher.initDB();
     }
+
+    @Test (expected = SQLException.class)
+    public void testInitDBSysTablesNotRightURL() throws Exception {
+        String testDBURL = "This DB url is not right.";
+        DBFetcher dbFetcher = new SysTablesDBFetcher(testDBURL);
+        dbFetcher.initDB();
+    }
+
+    @Test (expected = SQLException.class)
+    public void testDeInitDBSysTablesNotRightURL() throws Exception {
+        String testDBURL = "This DB url is not right.";
+        DBFetcher dbFetcher = new SysTablesDBFetcher(testDBURL);
+        dbFetcher.initDB();
+    }
+
+
 }

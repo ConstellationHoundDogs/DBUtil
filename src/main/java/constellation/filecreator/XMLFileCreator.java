@@ -20,16 +20,11 @@ public class XMLFileCreator implements FileCreator {
      * @param dbInfo VO containing Database information
      */
     @Override
-    public void createFile(DBInfo dbInfo) {
+    public void createFile(DBInfo dbInfo) throws JAXBException {
         File xmlFile = new File("XMLFile");
-        try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(DBInfo.class);
-            Marshaller marshaller = jaxbContext.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            marshaller.marshal(dbInfo, xmlFile);
-        } catch (JAXBException e) {
-            System.out.println(e.getMessage());
-            DBUtil.logger.error("Error in XMLFileCreator:" + e.getMessage());
-        }
+        JAXBContext jaxbContext = JAXBContext.newInstance(DBInfo.class);
+        Marshaller marshaller = jaxbContext.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        marshaller.marshal(dbInfo, xmlFile);
     }
 }

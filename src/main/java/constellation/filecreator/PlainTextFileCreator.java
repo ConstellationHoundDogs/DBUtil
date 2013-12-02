@@ -19,19 +19,15 @@ public class PlainTextFileCreator implements FileCreator {
      * @param dbInfo VO containing Database information
      */
     @Override
-    public void createFile(DBInfo dbInfo) {
+    public void createFile(DBInfo dbInfo) throws IOException {
         File file = new File("PlainTextFile");
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-            DBUtil.logger.error(e.getMessage());
-        }
-        try {
-            PrintStream printStream = new PrintStream(new FileOutputStream(file));
-            textDBInfoOutput(dbInfo, printStream);
-        } catch (FileNotFoundException e) {
-            DBUtil.logger.error(e.getMessage());
-        }
+
+        file.createNewFile();
+
+
+        PrintStream printStream = new PrintStream(new FileOutputStream(file));
+        textDBInfoOutput(dbInfo, printStream);
+
     }
 
     private void textDBInfoOutput(DBInfo dbInfo, PrintStream printStream) {

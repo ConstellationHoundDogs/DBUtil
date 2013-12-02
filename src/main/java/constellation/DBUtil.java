@@ -7,6 +7,9 @@ import org.apache.log4j.Logger;
 import constellation.filecreator.XMLFileCreator;
 import constellation.vo.DBInfo;
 
+import javax.xml.bind.JAXBException;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.*;
 
 /**
@@ -24,7 +27,7 @@ public class DBUtil {
         logger = Logger.getLogger(DBUtil.class.getName());
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args){
         DBUtil dbUtil = new DBUtil();
         if(args.length != 0){
            dbUtil.dbURL = args[0];
@@ -32,19 +35,29 @@ public class DBUtil {
         dbUtil.run();
     }
 
-    public void run() throws SQLException {
+    public void run(){
         initLogger();
         DBFetcher dbFetcher = new JDBCDBFetcher(dbURL);
-        dbFetcher.initDB();
+        try{
+            dbFetcher.initDB();
 
-        DBInfo dbInfo = dbFetcher.getDBInfo();
+            DBInfo dbInfo = dbFetcher.getDBInfo();
 
-        XMLFileCreator xmlFileCreator = new XMLFileCreator();
-        xmlFileCreator.createFile(dbInfo);
+            XMLFileCreator xmlFileCreator = new XMLFileCreator();
+            xmlFileCreator.createFile(dbInfo);
 
-        PlainTextFileCreator plainTextFileCreator = new PlainTextFileCreator();
-        plainTextFileCreator.createFile(dbInfo);
+            PlainTextFileCreator plainTextFileCreator = new PlainTextFileCreator();
+            plainTextFileCreator.createFile(dbInfo);
 
-        dbFetcher.deInitDB();
+            dbFetcher.deInitDB();
+        }catch(SQLException e){
+            logger.error(e.getMessage());
+        }catch (FileNotFoundException e){
+            logger.error(e.getMessage());
+        }catch (JAXBException e){
+            logger.error(e.getMessage());
+        } catch (IOException e) {
+            logger.error(e.getMessage());
+        }
     }
 }

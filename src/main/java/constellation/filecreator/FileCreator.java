@@ -2,6 +2,10 @@ package constellation.filecreator;
 
 import constellation.vo.DBInfo;
 
+import javax.xml.bind.JAXBException;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 /**
  * Created with IntelliJ IDEA.
  * User: vladimir
@@ -9,5 +13,5 @@ import constellation.vo.DBInfo;
  * Time: 5:08 PM
  */
 public interface FileCreator {
-    public void createFile(DBInfo dbInfo);
+    public void createFile(DBInfo dbInfo) throws IOException, JAXBException;
 }

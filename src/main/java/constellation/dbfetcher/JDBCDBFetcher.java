@@ -1,6 +1,5 @@
 package constellation.dbfetcher;
 
-import constellation.DBUtil;
 import constellation.vo.Column;
 import constellation.vo.DBInfo;
 import constellation.vo.Table;
@@ -33,25 +32,21 @@ public class JDBCDBFetcher extends DBFetcher {
         return dbInfo;
     }
 
-    private void updateTablesContents(DBInfo dbInfo) {
-        Statement statement;
+    private void updateTablesContents(DBInfo dbInfo) throws SQLException {
+        PreparedStatement statement;
         ResultSet resultSet;
         for(Table t : dbInfo.getTables()){
-            try {
-                statement = conn.createStatement();
-                resultSet = statement.executeQuery("SELECT * FROM " + t.getTableName());
-                ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
-                t.setColumnsNumber(resultSetMetaData.getColumnCount());
-                for(int i = 1; i <= t.getColumnsNumber(); i++){
-                    Column column = new Column();
-                    column.setColumnName(resultSetMetaData.getColumnName(i));
-                    column.setColumnType(resultSetMetaData.getColumnTypeName(i));
-                    t.getColumns().add(column);
-                }
-                updateColumnsContent(resultSet, t);
-            } catch (SQLException e) {
-                DBUtil.logger.error("Couldn't get statementQuery: " + e.getMessage());
+            statement = conn.prepareStatement("SELECT * FROM "+ t.getTableName());  // Использовать PreparedStatement здесь невозможно
+            resultSet = statement.executeQuery();
+            ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
+            t.setColumnsNumber(resultSetMetaData.getColumnCount());
+            for(int i = 1; i <= t.getColumnsNumber(); i++){
+                Column column = new Column();
+                column.setColumnName(resultSetMetaData.getColumnName(i));
+                column.setColumnType(resultSetMetaData.getColumnTypeName(i));
+                t.getColumns().add(column);
             }
+            updateColumnsContent(resultSet, t);
         }
     }
 
@@ -64,20 +59,17 @@ public class JDBCDBFetcher extends DBFetcher {
         }
     }
 
-    private void updateDataBaseMetaData(DBInfo dbInfo) {
+    private void updateDataBaseMetaData(DBInfo dbInfo) throws SQLException {
         DatabaseMetaData databaseMetaData;
-        try {
-            databaseMetaData = conn.getMetaData();
-            dbInfo.setDataBaseName(databaseMetaData.getDatabaseProductName());
-            dbInfo.setDataBaseVersion(databaseMetaData.getDriverVersion());
-            ResultSet schemas = databaseMetaData.getSchemas();
-            while (schemas.next()){
-                dbInfo.getSchemaNames().add(schemas.getString(1));
-            }
-            updateTablesNames(dbInfo, databaseMetaData);
-        } catch (SQLException e) {
-            DBUtil.logger.error("Couldn't get DataBaseMetaData: " + e.getMessage());
+        databaseMetaData = conn.getMetaData();
+        dbInfo.setDataBaseName(databaseMetaData.getDatabaseProductName());
+        dbInfo.setDataBaseVersion(databaseMetaData.getDriverVersion());
+        ResultSet schemas = databaseMetaData.getSchemas();
+        while (schemas.next()){
+            dbInfo.getSchemaNames().add(schemas.getString(1));
         }
+        updateTablesNames(dbInfo, databaseMetaData);
+
     }
 
     private void updateTablesNames(DBInfo dbInfo, DatabaseMetaData databaseMetaData) throws SQLException {
@@ -88,7 +80,4 @@ public class JDBCDBFetcher extends DBFetcher {
             dbInfo.getTables().add(table);
         }
     }
-
-
-
 }

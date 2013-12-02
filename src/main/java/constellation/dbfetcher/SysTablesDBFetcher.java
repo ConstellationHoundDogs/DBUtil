@@ -30,13 +30,11 @@ public class SysTablesDBFetcher extends DBFetcher {
     @Override
     public DBInfo getDBInfo() throws SQLException {
         DBInfo dbInfo = new DBInfo();
-        try {
-            updateTableNames(dbInfo);
-            updateColumns(dbInfo);
-            updateSchemas(dbInfo);
-        } catch (SQLException e) {
-            DBUtil.logger.error(e.getMessage());
-        }
+
+        updateTableNames(dbInfo);
+        updateColumns(dbInfo);
+        updateSchemas(dbInfo);
+
         return dbInfo;
     }
 
@@ -82,5 +80,4 @@ public class SysTablesDBFetcher extends DBFetcher {
             }
         }
     }
-
 }

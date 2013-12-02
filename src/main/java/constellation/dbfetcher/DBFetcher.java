@@ -1,6 +1,5 @@
 package constellation.dbfetcher;
 
-import constellation.DBUtil;
 import constellation.vo.DBInfo;
 
 import java.sql.*;
@@ -23,23 +22,15 @@ public abstract class DBFetcher {
     /**
      * Initializes the Database. Always call it after creating this object.
      */
-    public void initDB(){
-        try {
-            conn = DriverManager.getConnection(dbURL);
-        } catch (SQLException e) {
-            DBUtil.logger.error("Couldn't get DB connection: " + e.getMessage());
-        }
+    public void initDB() throws SQLException {
+        conn = DriverManager.getConnection(dbURL);
     }
 
     /**
      * DeInitializes the Database. Always call it after done using this object.
      */
-    public void deInitDB(){
-        try {
-            conn.close();
-        } catch (SQLException e) {
-            DBUtil.logger.error(e.getMessage());
-        }
+    public void deInitDB() throws SQLException {
+        conn.close();
     }
 
     public abstract DBInfo getDBInfo() throws SQLException;
