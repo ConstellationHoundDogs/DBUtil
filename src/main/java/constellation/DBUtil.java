@@ -32,17 +32,13 @@ public class DBUtil {
 
     public void run() throws SQLException {
         initLogger();
-
         DBOperator dbOperator = new DBOperator(dbURL);
         dbOperator.initDB();
 
-        DBInfo dbInfo = dbOperator.getDbInfo();
+        DBInfo dbInfo = dbOperator.getDBInfoBySysTables();
 
         XMLFileCreator xmlFileCreator = new XMLFileCreator();
         xmlFileCreator.createFile(dbInfo);
-
-        PlainTextFileCreator plainTextFileCreator = new PlainTextFileCreator();
-        plainTextFileCreator.createFile(dbInfo);
 
         dbOperator.deInitDB();
     }

@@ -40,15 +40,15 @@ public class PlainTextFileCreator implements FileCreator {
         System.out.println(dbInfo.getDataBaseVersion());
 
         for(Table t : dbInfo.getTables()){
-            System.out.println(t.tableName);
-            System.out.println(t.columnsNumber);
-            for(int i = 0; i < t.columns.size(); i++){
-                System.out.print(t.columns.get(i).columnType + " ");
+            System.out.println(t.getTableName());
+            System.out.println(t.getColumnsNumber());
+            for(int i = 0; i < t.getColumns().size(); i++){
+                System.out.print(t.getColumns().get(i).columnType + " ");
             }
             System.out.println();
-            for(int i = 0; i < t.columns.get(0).content.size(); i++){
-                for(int j = 0; j < t.columnsNumber; j++){
-                    System.out.print(t.columns.get(j).content.get(i) + " ");
+            for(int i = 0; i < t.getColumns().get(0).content.size(); i++){
+                for(int j = 0; j < t.getColumnsNumber(); j++){
+                    System.out.print(t.getColumns().get(j).content.get(i) + " ");
                 }
                 System.out.println();
             }
