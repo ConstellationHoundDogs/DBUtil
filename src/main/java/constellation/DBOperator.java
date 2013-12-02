@@ -11,7 +11,6 @@ import java.sql.*;
  * Date: 11/30/13
  * Time: 10:06 AM
  */
-
 public class DBOperator {
 
     private String dbURL;
@@ -99,7 +98,6 @@ public class DBOperator {
             }
         }
     }
-
 
     /**
      * Gets the DBInfo object containing Database information.
