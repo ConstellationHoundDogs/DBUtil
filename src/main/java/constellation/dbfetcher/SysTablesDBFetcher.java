@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.apache.derby.tools.sysinfo;
+
 /**
  * Created with IntelliJ IDEA.
  * User: vladimir
@@ -29,6 +31,9 @@ public class SysTablesDBFetcher extends DBFetcher {
     @Override
     public DBInfo getDBInfo() throws SQLException {
         DBInfo dbInfo = new DBInfo();
+
+        dbInfo.setDataBaseName(sysinfo.getProductName());
+        dbInfo.setDataBaseVersion(sysinfo.getVersionString());
 
         updateTableNames(dbInfo);
         updateColumns(dbInfo);
@@ -55,7 +60,7 @@ public class SysTablesDBFetcher extends DBFetcher {
                     Column column = new Column();
                     table.setColumnsNumber(0);
                     column.setColumnName(columns.getString("COLUMNNAME"));
-                    column.setColumnName(columns.getString("COLUMNDATATYPE"));
+                    column.setColumnType(columns.getString("COLUMNDATATYPE"));
                     int columnNumber = Integer.parseInt(columns.getString("COLUMNNUMBER"));
                     if(table.getColumnsNumber() < columnNumber){
                         table.setColumnsNumber(columnNumber);

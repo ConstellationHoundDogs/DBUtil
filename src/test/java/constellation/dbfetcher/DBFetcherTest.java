@@ -40,5 +40,4 @@ public class DBFetcherTest {
         dbFetcher.initDB();
     }
 
-
 }

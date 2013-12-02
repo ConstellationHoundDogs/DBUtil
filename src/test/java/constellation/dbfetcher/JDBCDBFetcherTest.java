@@ -1,6 +1,7 @@
 package constellation.dbfetcher;
 
 import constellation.vo.DBInfo;
+import constellation.vo.Table;
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -11,6 +12,11 @@ import org.junit.Assert;
  * Time: 7:25 PM
  */
 public class JDBCDBFetcherTest {
+
+    //Тестировка в данном классе производиться с базой данных в которой есть таблицы, и они не пустые,
+    //а в этих таблицах есть колонки, и они не пустые,
+    //дабы проверить работу методов которые заполняют обьект хранения информации (DBInfo)
+
 
     String URL = "jdbc:derby:TESTDB";
 
@@ -77,7 +83,6 @@ public class JDBCDBFetcherTest {
         fetcher.deInitDB();
     }
 
-
     @Test
     public void testGetDBInfoSchemaNamesIsNotEmpty() throws Exception {
         JDBCDBFetcher fetcher = new JDBCDBFetcher(URL);
@@ -107,6 +112,58 @@ public class JDBCDBFetcherTest {
 
         DBInfo dbInfo = fetcher.getDBInfo();
         Assert.assertNotEquals(dbInfo.getTables(), 0);
+
+        fetcher.deInitDB();
+    }
+
+    @Test
+    public void testGetDBInfoColumnNamesIsNotNull() throws Exception {
+        JDBCDBFetcher fetcher = new JDBCDBFetcher(URL);
+        fetcher.initDB();
+
+        DBInfo dbInfo = fetcher.getDBInfo();
+        for(Table t : dbInfo.getTables()){
+           Assert.assertNotNull(t.getColumns());
+        }
+
+        fetcher.deInitDB();
+    }
+
+    @Test
+    public void testGetDBInfoColumnNamesIsNotEmpty() throws Exception {
+        JDBCDBFetcher fetcher = new JDBCDBFetcher(URL);
+        fetcher.initDB();
+
+        DBInfo dbInfo = fetcher.getDBInfo();
+        for(Table t : dbInfo.getTables()){
+            Assert.assertNotEquals(t.getColumns().size(), 0);
+        }
+
+        fetcher.deInitDB();
+    }
+
+    @Test
+    public void testGetDBInfoColumnNumberIsNotNull() throws Exception {
+        JDBCDBFetcher fetcher = new JDBCDBFetcher(URL);
+        fetcher.initDB();
+
+        DBInfo dbInfo = fetcher.getDBInfo();
+        for(Table t : dbInfo.getTables()){
+            Assert.assertNotEquals(t.getColumnsNumber(), 0);
+        }
+
+        fetcher.deInitDB();
+    }
+
+    @Test
+    public void testGetDBInfoColumnNumberIsRight() throws Exception {
+        JDBCDBFetcher fetcher = new JDBCDBFetcher(URL);
+        fetcher.initDB();
+
+        DBInfo dbInfo = fetcher.getDBInfo();
+        for(Table t : dbInfo.getTables()){
+            Assert.assertEquals(t.getColumnsNumber(), t.getColumns().size());
+        }
 
         fetcher.deInitDB();
     }

@@ -2,6 +2,7 @@ package constellation;
 
 import constellation.dbfetcher.DBFetcher;
 import constellation.dbfetcher.JDBCDBFetcher;
+import constellation.dbfetcher.SysTablesDBFetcher;
 import constellation.filecreator.PlainTextFileCreator;
 import org.apache.log4j.Logger;
 import constellation.filecreator.XMLFileCreator;
@@ -37,7 +38,7 @@ public class DBUtil {
 
     public void run(){
         initLogger();
-        DBFetcher dbFetcher = new JDBCDBFetcher(dbURL);
+        DBFetcher dbFetcher = new SysTablesDBFetcher(dbURL);
         try{
             dbFetcher.initDB();
 
