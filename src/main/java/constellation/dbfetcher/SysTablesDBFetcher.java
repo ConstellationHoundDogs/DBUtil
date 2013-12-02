@@ -1,6 +1,5 @@
 package constellation.dbfetcher;
 
-import constellation.DBUtil;
 import constellation.vo.Column;
 import constellation.vo.DBInfo;
 import constellation.vo.Table;

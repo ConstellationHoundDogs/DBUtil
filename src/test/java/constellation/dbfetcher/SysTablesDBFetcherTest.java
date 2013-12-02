@@ -7,7 +7,6 @@ import org.junit.Test;
  * User: vladimir
  * Date: 12/2/13
  * Time: 7:25 PM
- * To change this template use File | Settings | File Templates.
  */
 public class SysTablesDBFetcherTest {
     @Test
