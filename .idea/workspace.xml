@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57e78a0-c114-41f2-aa03-0948f199ef78" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/constellation/filecreator/PDFFileCreator.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/log.ctrl" afterPath="$PROJECT_DIR$/TESTDB/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/log1.dat" afterPath="$PROJECT_DIR$/TESTDB/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/TESTDB/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/vo/DBInfo.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/vo/DBInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SQLExceptionTest.java" afterPath="$PROJECT_DIR$/src/test/java/SQLExceptionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/db.lck" afterPath="$PROJECT_DIR$/TESTDB/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log4j/log.out" afterPath="$PROJECT_DIR$/log4j/log.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b4b5a0bf-8f41-4aa3-aa55-ecfe9049de62" name="New changelist" comment="" />
     <ignored path="DBUtil.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386087888152" ignored="false" />
+    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386091118094" ignored="false" />
     <file path="/fragment.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386005258208" ignored="false" />
     <file path="/DBUtil.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386018414044" ignored="false" />
     <file path="/PlainTextFileCreator.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386018719842" ignored="false" />
@@ -1020,7 +1006,11 @@
       <created>1386019625628</created>
       <updated>1386019625628</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added tests.">
+      <created>1386091128073</created>
+      <updated>1386091128073</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1066,7 +1056,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6505895" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27267876" sideWeight="0.6505895" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27267876" sideWeight="0.5091104" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3494105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7845659" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
