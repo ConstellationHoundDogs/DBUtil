@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57e78a0-c114-41f2-aa03-0948f199ef78" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/constellation/filecreator/PDFFileCreator.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/log.ctrl" afterPath="$PROJECT_DIR$/TESTDB/log/log.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/log1.dat" afterPath="$PROJECT_DIR$/TESTDB/log/log1.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/TESTDB/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/DBFetcherTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/DBFetcherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DBUtil.iml" afterPath="$PROJECT_DIR$/DBUtil.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/DBUtil.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/DBUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/vo/DBInfo.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/vo/DBInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/SysTablesDBFetcher.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/SysTablesDBFetcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/SysTablesDBFetcherTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/SysTablesDBFetcherTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java" afterPath="$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SQLExceptionTest.java" afterPath="$PROJECT_DIR$/src/test/java/SQLExceptionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TESTDB/db.lck" afterPath="$PROJECT_DIR$/TESTDB/db.lck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log4j/log.out" afterPath="$PROJECT_DIR$/log4j/log.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b4b5a0bf-8f41-4aa3-aa55-ecfe9049de62" name="New changelist" comment="" />
     <ignored path="DBUtil.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386013422219" ignored="false" />
+    <file path="/Dummy.txt" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386087888152" ignored="false" />
     <file path="/fragment.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386005258208" ignored="false" />
     <file path="/DBUtil.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386018414044" ignored="false" />
     <file path="/PlainTextFileCreator.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386018719842" ignored="false" />
@@ -28,7 +31,7 @@
     <file path="/Column.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386003227553" ignored="false" />
     <file path="/Table.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1385977913043" ignored="false" />
     <file path="/SysTablesDBOperator.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386004937482" ignored="false" />
-    <file path="/DBFetcher.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386004866791" ignored="false" />
+    <file path="/DBFetcher.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386090861117" ignored="false" />
     <file path="/JDBCDBFetcher.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386010964254" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/java/JDBCDBFetcher.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386005020131" ignored="false" />
     <file path="/DBFetcherTest.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386012002473" ignored="false" />
@@ -36,6 +39,8 @@
     <file path="/JDBCDBFetcherTest.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386016725959" ignored="false" />
     <file path="/SysTablesDBFetcherTest.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386018289888" ignored="false" />
     <file path="/SysTablesDBFetcher.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386018916519" ignored="false" />
+    <file path="/XMLFileCreatorTest.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386090496604" ignored="false" />
+    <file path="/PlainTextFileCreatorTest.java" changelist="c57e78a0-c114-41f2-aa03-0948f199ef78" time="1386091002567" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,10 +112,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="XMLFile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XMLFile">
+      <file leaf-file-name="DBInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/constellation/vo/DBInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="19" column="35" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Column.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/constellation/vo/Column.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysTablesDBFetcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/SysTablesDBFetcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="13" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JDBCDBFetcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/JDBCDBFetcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBFetcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,35 +161,15 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/constellation/dbfetcher/SysTablesDBFetcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysTablesDBFetcher.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/SysTablesDBFetcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="77" selection-start="398" selection-end="398" vertical-scroll-proportion="0.18191841">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlainTextFileCreator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java">
+      <file leaf-file-name="DBFetcherTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/constellation/dbfetcher/DBFetcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="61" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SQLExceptionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SQLExceptionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+            <state line="12" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="0.16930023">
               <folding />
             </state>
           </provider>
@@ -157,10 +178,30 @@
       <file leaf-file-name="JDBCDBFetcherTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="1" selection-start="4600" selection-end="4600" vertical-scroll-proportion="0.0">
+            <state line="164" column="0" selection-start="4598" selection-end="4598" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlainTextFileCreatorTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="16" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLFileCreatorTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="94" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,22 +225,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/constellation/SysTablesDBFetcher.java" />
-        <option value="$PROJECT_DIR$/src/test/java/JDBCDBFetcher.java" />
-        <option value="$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/constellation/DBUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/JDBCDBFetcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/constellation/filecreator/XMLFileCreator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/log4j/log.out" />
         <option value="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/DBFetcherTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/SysTablesDBFetcherTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/constellation/DBUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/SysTablesDBFetcher.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SQLExceptionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/constellation/vo/DBInfo.java" />
+        <option value="$PROJECT_DIR$/XMLFile" />
+        <option value="$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java" />
+        <option value="$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java" />
       </list>
     </option>
   </component>
@@ -209,6 +250,34 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="DBUtil" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="DBUtil" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="28" />
@@ -243,84 +312,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="DBUtil" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DBUtil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.apache.derby:derby:10.10.1.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="derby-10.10.1.1.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="derby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DBUtil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.apache.derby:derby:10.10.1.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="derby-10.10.1.1.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="derby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DBUtil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.apache.derby:derby:10.10.1.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="derby-10.10.1.1.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -378,6 +375,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="constellation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBUtil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBUtil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constellation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filecreator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,8 +455,30 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="DBUtil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBUtil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constellation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,6 +505,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="constellation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -519,22 +572,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DBUtil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DBUtil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -567,7 +608,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DBUtil">
+  <component name="RunManager" selected="JUnit.XMLFileCreatorTest.testIfFileIsXML">
     <configuration default="false" name="DBUtil" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="constellation.DBUtil" />
@@ -582,36 +623,6 @@
       <module name="DBUtil" />
       <envs />
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DBFetcherTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="constellation.dbfetcher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="DBUtil" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="constellation.dbfetcher" />
-      <option name="MAIN_CLASS_NAME" value="constellation.dbfetcher.DBFetcherTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Cover" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -673,10 +684,100 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="XMLFileCreatorTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="constellation.filecreator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="DBUtil" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="constellation.filecreator" />
+      <option name="MAIN_CLASS_NAME" value="constellation.filecreator.XMLFileCreatorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="XMLFileCreatorTest.testIfFileIsXML" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="constellation.filecreator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="DBUtil" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="constellation.filecreator" />
+      <option name="MAIN_CLASS_NAME" value="constellation.filecreator.XMLFileCreatorTest" />
+      <option name="METHOD_NAME" value="testIfFileIsXML" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -787,19 +888,21 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SQLExceptionTest" />
       <item index="1" class="java.lang.String" itemvalue="Application.DBUtil" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DBFetcherTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JDBCDBFetcherTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SysTablesDBFetcherTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JDBCDBFetcherTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SysTablesDBFetcherTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.XMLFileCreatorTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.XMLFileCreatorTest.testIfFileIsXML" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.DBUtil" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SysTablesDBFetcherTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JDBCDBFetcherTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DBFetcherTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.XMLFileCreatorTest.testIfFileIsXML" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.XMLFileCreatorTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DBUtil" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SysTablesDBFetcherTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JDBCDBFetcherTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -913,7 +1016,11 @@
       <created>1386013426934</created>
       <updated>1386013426934</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added tests.">
+      <created>1386019625628</created>
+      <updated>1386019625628</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -946,26 +1053,26 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21543409" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809773" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7845659" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.60021436" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20811099" sideWeight="0.60021436" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6505895" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.7052519" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4799302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27267876" sideWeight="0.6505895" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3494105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.7845659" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1037,71 +1144,79 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/filecreator/XMLFileCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SQLExceptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="38" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
+        <state line="68" column="4" selection-start="2091" selection-end="2436" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log4j/log.out">
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/filecreator/FileCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="14" column="17" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/JDBCDBFetcher.java">
+    <entry file="file://$PROJECT_DIR$/XMLFile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="134" selection-start="1018" selection-end="1068" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="274" selection-end="274" vertical-scroll-proportion="0.403481">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/constellation/dbfetcher/DBFetcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="5" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar!/org/apache/derby/tools/sysinfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.123558484">
+        <state line="10" column="7" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/constellation/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="53" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.47468355">
+        <state line="40" column="53" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar!/org/apache/derby/info/DBMS.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/filecreator/XMLFileCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/vo/DBInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="35" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/vo/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/SysTablesDBFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/JDBCDBFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/DBFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1109,52 +1224,38 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/constellation/dbfetcher/SysTablesDBFetcherTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/constellation/filecreator/XMLFileCreatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="94" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/constellation/filecreator/PlainTextFileCreatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlainTextFile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/filecreator/PlainTextFileCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="61" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SQLExceptionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/constellation/dbfetcher/JDBCDBFetcherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="1" selection-start="4600" selection-end="4600" vertical-scroll-proportion="0.0">
+        <state line="164" column="0" selection-start="4598" selection-end="4598" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XMLFile">
+    <entry file="file://$PROJECT_DIR$/src/test/java/constellation/dbfetcher/DBFetcherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/constellation/dbfetcher/SysTablesDBFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="77" selection-start="398" selection-end="398" vertical-scroll-proportion="0.18191841">
+        <state line="12" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="0.16930023">
           <folding />
         </state>
       </provider>

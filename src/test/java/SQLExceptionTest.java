@@ -1,15 +1,16 @@
-/**
- * Created with IntelliJ IDEA.
- * User: vladimir
- * Date: 11/30/13
- * Time: 12:16 AM
- */
 import constellation.DBUtil;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.sql.*;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: vladimir
+ * Date: 11/30/13
+ * Time: 12:16 AM
+ */
 
 public class SQLExceptionTest {
 

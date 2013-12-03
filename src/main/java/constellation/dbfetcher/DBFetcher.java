@@ -13,7 +13,7 @@ import java.sql.*;
 public abstract class DBFetcher {
 
     private String dbURL;
-    Connection conn;
+    protected Connection conn;
 
     public DBFetcher(String dbURL){
         this.dbURL = dbURL;

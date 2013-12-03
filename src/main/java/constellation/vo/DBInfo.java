@@ -19,7 +19,6 @@ public class DBInfo {
     private String dataBaseName;
     private String dataBaseVersion;
 
-
     private List<String> schemaNames = new ArrayList<String>();
     private List<Table> tables = new ArrayList<Table>();
 

@@ -1,6 +1,5 @@
 package constellation.filecreator;
 
-import constellation.DBUtil;
 import constellation.vo.DBInfo;
 import constellation.vo.Table;
 
@@ -12,6 +11,7 @@ import java.io.*;
  * Date: 11/30/13
  * Time: 10:07 AM
  */
+
 public class PlainTextFileCreator implements FileCreator {
 
     /**

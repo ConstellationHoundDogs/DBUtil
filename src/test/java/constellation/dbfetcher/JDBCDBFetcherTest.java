@@ -17,7 +17,6 @@ public class JDBCDBFetcherTest {
     //а в этих таблицах есть колонки, и они не пустые,
     //дабы проверить работу методов которые заполняют обьект хранения информации (DBInfo)
 
-
     String URL = "jdbc:derby:TESTDB";
 
     @Test
